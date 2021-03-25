@@ -1,6 +1,1 @@
-﻿<#@ template language="C#" #>
-<#@ assembly name="System.Core" #>
-<#@ import namespace="System.Linq" #>
-<#@ import namespace="System.Text" #>
-<#@ import namespace="System.Collections.Generic" #>
-
+﻿select pr.name cat.name from product as pr left join product_category as pc on pc.product = pr.id left join category as cat on pc.category = cat.id
